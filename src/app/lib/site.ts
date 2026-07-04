@@ -14,4 +14,6 @@ export const CAST = [
   { id: "raydar", name: "Raydar", role: "Sensor Heart" },
 ] as const;
 
+export type CharacterId = (typeof CAST)[number]["id"];
+
 export type { GalleryItem };

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CharacterCard } from "./components/CharacterCard";
 import { CAST, SITE } from "./lib/site";
 
 export default function HomePage() {
@@ -31,13 +32,7 @@ export default function HomePage() {
         </h2>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {CAST.map((c) => (
-            <div
-              key={c.id}
-              className="rounded-lg border border-[var(--border)] bg-[var(--card)] p-5 text-center"
-            >
-              <h3 className="font-semibold text-[var(--text)]">{c.name}</h3>
-              <p className="mt-1 text-xs text-[var(--cyan)]">{c.role}</p>
-            </div>
+            <CharacterCard key={c.id} character={c} />
           ))}
         </div>
       </section>
