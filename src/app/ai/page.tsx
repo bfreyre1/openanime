@@ -22,7 +22,7 @@ export default function AiPage() {
           unaltered photography of real people or places.
         </p>
         <p>
-          <strong className="text-[var(--text)]">openanimeai.com</strong> points
+          <strong className="text-[var(--text)]">openainime.com</strong> redirects
           here for transparency about our AI-assisted production workflow.
         </p>
       </div>

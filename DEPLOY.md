@@ -53,22 +53,22 @@ Project → **Settings** → **Domains** → add each:
 
 | Domain | Notes |
 |--------|--------|
-| `openanime.com` | Primary |
-| `www.openanime.com` | Vercel may auto-suggest redirect to apex |
-| `openanimeai.com` | Redirects to openanime.com via `next.config.ts` |
-| `www.openanimeai.com` | Same |
+| `openaianime.com` | **Primary** |
+| `www.openaianime.com` | Vercel may auto-suggest redirect to apex |
+| `openainime.com` | Redirects to openaianime.com via `next.config.ts` |
+| `www.openainime.com` | Same |
 
 Vercel shows **DNS records** for each — use those in GoDaddy (step 4).
 
 ## 4. GoDaddy DNS
 
-For **each domain** (`openanime.com`, `openanimeai.com`):
+For **each domain** (`openaianime.com`, `openainime.com`):
 
 1. GoDaddy → **My Products** → domain → **DNS** → **Manage DNS**
 2. Remove conflicting old **A** / **CNAME** for `@` and `www` if pointing elsewhere
 3. Add records Vercel shows. Typical setup:
 
-### Apex (root) — `openanime.com` and `openanimeai.com`
+### Apex (root) — `openaianime.com` and `openainime.com`
 
 | Type | Name | Value | TTL |
 |------|------|-------|-----|
@@ -82,7 +82,7 @@ For **each domain** (`openanime.com`, `openanimeai.com`):
 |------|------|-------|-----|
 | **CNAME** | `www` | `cname.vercel-dns.com` | 600 |
 
-Repeat for **openanimeai.com** (same A + CNAME for www).
+Repeat for **openainime.com** (same A + CNAME for www).
 
 4. Save → wait 5–30 min (sometimes up to 48h; usually fast)
 5. In Vercel, domains should show **Valid Configuration**
@@ -109,11 +109,11 @@ git commit -m "Publish nova-anim-v1"
 git push
 ```
 
-Vercel auto-deploys → https://openanime.com/gallery/nova-anim-v1
+Vercel auto-deploys → https://openaianime.com/gallery/nova-anim-v1
 
 ## 6. Alfred
 
-After live, large videos: post `https://openanime.com/gallery/<id>` in `#glitch-crew`.
+After live, large videos: post `https://openaianime.com/gallery/<id>` in `#glitch-crew`.
 
 ## Troubleshooting
 
@@ -122,4 +122,4 @@ After live, large videos: post `https://openanime.com/gallery/<id>` in `#glitch-
 | `Repository not found` | Run `gh repo create` (step 2) |
 | GoDaddy "Parked" page | Remove parking A record; use Vercel A only |
 | www works, apex doesn't | Check `@` A record matches Vercel IP |
-| openanimeai shows wrong site | Add domain in Vercel project + DNS for that domain too |
+| openainime shows wrong site | Add domain in Vercel project + DNS for that domain too |

@@ -5,14 +5,14 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/:path*",
-        has: [{ type: "host", value: "openanimeai.com" }],
-        destination: "https://openanime.com/:path*",
+        has: [{ type: "host", value: "openainime.com" }],
+        destination: "https://openaianime.com/:path*",
         permanent: true,
       },
       {
         source: "/:path*",
-        has: [{ type: "host", value: "www.openanimeai.com" }],
-        destination: "https://openanime.com/:path*",
+        has: [{ type: "host", value: "www.openainime.com" }],
+        destination: "https://openaianime.com/:path*",
         permanent: true,
       },
     ];

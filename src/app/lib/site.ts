@@ -4,7 +4,7 @@ export const SITE = {
   name: "OpenAnime",
   show: "Glitch Crew",
   tagline: "Neo-Tokyo Bay. Found family. Reality glitches.",
-  domain: "https://openanime.com",
+  domain: "https://openaianime.com",
 } as const;
 
 export const CAST = [

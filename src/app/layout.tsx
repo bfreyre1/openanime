@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   description:
     "Neo-Tokyo Bay. A misfit creator crew tears holes in reality. Stills, clips, and episodes.",
-  metadataBase: new URL("https://openanime.com"),
+  metadataBase: new URL("https://openaianime.com"),
   openGraph: {
     siteName: "OpenAnime",
     title: "Glitch Crew",

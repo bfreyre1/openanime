@@ -2,8 +2,9 @@
 
 Public home for **Glitch Crew** — gallery, episodes, and AI disclosure.
 
-- **Production site:** [openanime.com](https://openanime.com)
-- **AI disclosure:** [openanime.com/ai](https://openanime.com/ai) — `openanimeai.com` redirects here
+- **Production site:** [openaianime.com](https://openaianime.com)
+- **Short domain:** [openainime.com](https://openainime.com) → redirects to openaianime.com
+- **AI disclosure:** [openaianime.com/ai](https://openaianime.com/ai)
 
 ## Develop
 
@@ -31,8 +32,8 @@ bash ~/.openclaw/canon/scripts/publish-to-openanime.sh \
 ## Vercel
 
 1. Import GitHub repo `openanime`
-2. Add domains: `openanime.com`, `www.openanime.com`, `openanimeai.com`, `www.openanimeai.com`
-3. `openanimeai.com` redirects via `next.config.ts`
+2. Add domains: `openaianime.com`, `www.openaianime.com`, `openainime.com`, `www.openainime.com`
+3. `openainime.com` redirects via `next.config.ts`
 
 ## Repo layout
 
