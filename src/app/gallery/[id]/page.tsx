@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getGalleryItem, getGalleryItems } from "../../lib/gallery";
+import { galleryCharacterTags, getGalleryItem, getGalleryItems } from "../../lib/gallery";
 
 export async function generateStaticParams() {
   return getGalleryItems().map((item) => ({ id: item.id }));
@@ -53,7 +53,9 @@ export default async function GalleryItemPage({
         )}
       </div>
       <p className="mt-4 text-xs text-[var(--muted)] uppercase tracking-wider">
-        {[item.character, item.episode, item.published].filter(Boolean).join(" · ")}
+        {[galleryCharacterTags(item).join(" + ") || item.character, item.episode, item.published]
+          .filter(Boolean)
+          .join(" · ")}
       </p>
     </div>
   );

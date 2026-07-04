@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { GalleryItem } from "../lib/gallery";
+import { galleryCharacterTags, type GalleryItem } from "../lib/gallery";
 
 export function GalleryCard({ item }: { item: GalleryItem }) {
   const isVideo = item.type === "video";
@@ -47,7 +47,9 @@ export function GalleryCard({ item }: { item: GalleryItem }) {
             </p>
           )}
           <p className="mt-2 text-xs uppercase tracking-wider text-[var(--pink)]">
-            {[item.character, item.episode].filter(Boolean).join(" · ")}
+            {[galleryCharacterTags(item).join(" + ") || item.character, item.episode]
+              .filter(Boolean)
+              .join(" · ")}
           </p>
         </div>
       </Link>

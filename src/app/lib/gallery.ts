@@ -6,12 +6,25 @@ export type GalleryItem = {
   title: string;
   type: "image" | "video";
   src: string;
+  /** Scene thumbnail — still or last frame; not hero ref. */
   poster?: string;
+  /** Primary character label (legacy / display). */
   character?: string;
+  /** Filter tags — multi-character scenes appear under each. */
+  characters?: string[];
   episode?: string;
   published?: string;
   description?: string;
 };
+
+export function galleryCharacterTags(item: GalleryItem): string[] {
+  if (item.characters?.length) return item.characters;
+  return item.character ? [item.character] : [];
+}
+
+function itemMatchesCharacter(item: GalleryItem, character: CharacterId): boolean {
+  return galleryCharacterTags(item).includes(character);
+}
 
 const CHARACTER_IDS = new Set<string>(CAST.map((c) => c.id));
 
@@ -28,7 +41,7 @@ export function getGalleryItems(): GalleryItem[] {
 export function getGalleryItemsByCharacter(character?: string): GalleryItem[] {
   const items = getGalleryItems();
   if (!character || !isCharacterId(character)) return items;
-  return items.filter((item) => item.character === character);
+  return items.filter((item) => itemMatchesCharacter(item, character));
 }
 
 export function getGalleryItem(id: string): GalleryItem | undefined {
