@@ -2,14 +2,88 @@
   "updated": "2026-07-04",
   "items": [
     {
+      "id": "raydar-anim-v1",
+      "title": "Raydar — sensor pulse",
+      "type": "video",
+      "src": "/media/raydar-anim-v1.mp4",
+      "poster": "/media/raydar-ref-v1.jpg",
+      "character": "raydar",
+      "episode": "EP01",
+      "published": "2026-07-04",
+      "description": "Chest core pulses, eyes shift blue to pink, scan sweep."
+    },
+    {
+      "id": "shiro-anim-v1",
+      "title": "Shiro — phantom alley",
+      "type": "video",
+      "src": "/media/shiro-anim-v1.mp4",
+      "poster": "/media/shiro-ref-v1.jpg",
+      "character": "shiro",
+      "episode": "EP01",
+      "published": "2026-07-04",
+      "description": "Tail sway, fox ears twitch, after-image phantom flicker."
+    },
+    {
+      "id": "kai-anim-v1",
+      "title": "Kai — shadow rooftop",
+      "type": "video",
+      "src": "/media/kai-anim-v1.mp4",
+      "poster": "/media/kai-ref-v1.jpg",
+      "character": "kai",
+      "episode": "EP01",
+      "published": "2026-07-04",
+      "description": "Slow push-in, rain, crimson eyes, shadow flicker."
+    },
+    {
+      "id": "raydar-ref-v1",
+      "title": "Raydar — ref still",
+      "type": "image",
+      "src": "/media/raydar-ref-v1.jpg",
+      "character": "raydar",
+      "episode": "EP01",
+      "published": "2026-07-04",
+      "description": "Matte black robo-dog, pink-blue core pulse — hero ref."
+    },
+    {
+      "id": "shiro-ref-v1",
+      "title": "Shiro — ref still",
+      "type": "image",
+      "src": "/media/shiro-ref-v1.jpg",
+      "character": "shiro",
+      "episode": "EP01",
+      "published": "2026-07-04",
+      "description": "Fox ears, golden eyes, phantom trickster — hero ref."
+    },
+    {
+      "id": "kai-ref-v1",
+      "title": "Kai — ref still",
+      "type": "image",
+      "src": "/media/kai-ref-v1.jpg",
+      "character": "kai",
+      "episode": "EP01",
+      "published": "2026-07-04",
+      "description": "Shadow protector, crimson eyes, rain-slick trench — hero ref."
+    },
+    {
       "id": "nova-anim-v1",
-      "title": "Nova — rooftop anim test",
+      "title": "Nova — Midnight Glitch Run",
       "type": "video",
       "src": "/media/nova-anim-v1.mp4",
+      "poster": "/media/nova-ref-v1.jpg",
       "character": "nova",
       "episode": "EP01",
       "published": "2026-07-04",
       "description": "Slow push-in, rain, neon flicker — Midnight Glitch Run preview."
+    },
+    {
+      "id": "nova-ref-v1",
+      "title": "Nova — ref still",
+      "type": "image",
+      "src": "/media/nova-ref-v1.jpg",
+      "character": "nova",
+      "episode": "EP01",
+      "published": "2026-07-04",
+      "description": "Pink-blue hair, glitch tattoo, rooftop rain — hero ref."
     }
   ]
 }
