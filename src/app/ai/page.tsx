@@ -22,6 +22,8 @@ export default function AiPage() {
           unaltered photography of real people or places.
         </p>
         <p>
+          <strong className="text-[var(--text)]">openaianime.com</strong> is the
+          public home for Glitch Crew.{" "}
           <strong className="text-[var(--text)]">openainime.com</strong> redirects
           here for transparency about our AI-assisted production workflow.
         </p>

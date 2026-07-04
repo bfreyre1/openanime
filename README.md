@@ -1,4 +1,4 @@
-# OpenAnime
+# OpenAIAnime
 
 Public home for **Glitch Crew** — gallery, episodes, and AI disclosure.
 

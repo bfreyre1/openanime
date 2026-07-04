@@ -1,7 +1,7 @@
 import type { GalleryItem } from "./gallery";
 
 export const SITE = {
-  name: "OpenAnime",
+  name: "OpenAIAnime",
   show: "Glitch Crew",
   tagline: "Neo-Tokyo Bay. Found family. Reality glitches.",
   domain: "https://openaianime.com",

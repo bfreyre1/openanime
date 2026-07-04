@@ -14,11 +14,12 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <Link href="/" className="group">
           <span className="text-xs uppercase tracking-[0.25em] text-[var(--cyan)]">
-            {SITE.name}
+            openaianime.com
           </span>
           <span className="block text-lg font-semibold text-[var(--text)] group-hover:text-[var(--pink)] transition-colors">
-            {SITE.show}
+            {SITE.name}
           </span>
+          <span className="block text-xs text-[var(--muted)]">{SITE.show}</span>
         </Link>
         <nav className="flex gap-5 text-sm">
           {links.map((l) => (

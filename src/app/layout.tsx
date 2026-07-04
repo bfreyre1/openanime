@@ -5,15 +5,15 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Glitch Crew — OpenAnime",
-    template: "%s · OpenAnime",
+    default: "Glitch Crew — OpenAIAnime",
+    template: "%s · OpenAIAnime",
   },
   description:
     "Neo-Tokyo Bay. A misfit creator crew tears holes in reality. Stills, clips, and episodes.",
   metadataBase: new URL("https://openaianime.com"),
   openGraph: {
-    siteName: "OpenAnime",
-    title: "Glitch Crew",
+    siteName: "OpenAIAnime",
+    title: "Glitch Crew — OpenAIAnime",
     description: "Found family. Chaos with heart. Reality glitches.",
   },
 };
