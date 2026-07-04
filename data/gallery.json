@@ -1,0 +1,16 @@
+{
+  "updated": "2026-07-04",
+  "items": [
+    {
+      "id": "nova-anim-v1",
+      "title": "Nova — rooftop anim test",
+      "type": "video",
+      "src": "/media/nova-anim-v1.mp4",
+      "poster": "/media/nova-anim-v1-poster.jpg",
+      "character": "nova",
+      "episode": "EP01",
+      "published": "2026-07-04",
+      "description": "Slow push-in, rain, neon flicker — Midnight Glitch Run preview."
+    }
+  ]
+}

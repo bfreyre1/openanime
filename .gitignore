@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+.env*.local
+.DS_Store
+*.log
+
+# Large media — publish intentionally; optional git-lfs later
+# public/media/*.mp4
