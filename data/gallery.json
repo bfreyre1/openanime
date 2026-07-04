@@ -2,6 +2,17 @@
   "updated": "2026-07-04",
   "items": [
     {
+      "id": "EP01-S02-kai-nova-tension",
+      "title": "Kai + Nova — doorway tension",
+      "type": "video",
+      "src": "/media/EP01-S02-kai-nova-tension.mp4",
+      "poster": "/media/kai-ref-v1.jpg",
+      "character": "kai",
+      "episode": "EP01",
+      "published": "2026-07-04",
+      "description": "Interior two-shot — charged proximity, dry subjects, rain on window only. EP01 edit desk S02."
+    },
+    {
       "id": "shiro-tail-playful-v1",
       "title": "Shiro — playful tail (v1 ref)",
       "type": "video",
