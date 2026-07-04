@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getCharacterMediaCount, getCharacterPreviewSrc } from "../lib/gallery";
+import { getCharacterMediaCount, getCharacterProfileSrc } from "../lib/gallery";
 import type { CharacterId } from "../lib/site";
 
 type Character = {
@@ -9,7 +9,7 @@ type Character = {
 };
 
 export function CharacterCard({ character }: { character: Character }) {
-  const preview = getCharacterPreviewSrc(character.id);
+  const preview = getCharacterProfileSrc(character.id);
   const count = getCharacterMediaCount(character.id);
 
   return (

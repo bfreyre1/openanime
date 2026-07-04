@@ -48,13 +48,9 @@ export function getGalleryItem(id: string): GalleryItem | undefined {
   return getGalleryItems().find((item) => item.id === id);
 }
 
-/** Best thumbnail for a character card — latest image, or video poster. */
-export function getCharacterPreviewSrc(character: CharacterId): string | undefined {
-  for (const item of getGalleryItemsByCharacter(character)) {
-    if (item.type === "image") return item.src;
-    if (item.poster) return item.poster;
-  }
-  return undefined;
+/** Locked hero ref for homepage character cards (not latest scene poster). */
+export function getCharacterProfileSrc(character: CharacterId): string | undefined {
+  return getGalleryItem(`${character}-ref-v1`)?.src;
 }
 
 export function getCharacterMediaCount(character: CharacterId): number {
