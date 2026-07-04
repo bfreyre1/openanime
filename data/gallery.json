@@ -2,6 +2,17 @@
   "updated": "2026-07-04",
   "items": [
     {
+      "id": "shiro-tail-playful-v1",
+      "title": "Shiro — playful tail (v1 ref)",
+      "type": "video",
+      "src": "/media/shiro-tail-playful-v1.mp4",
+      "poster": "/media/shiro-ref-v1.jpg",
+      "character": "shiro",
+      "episode": "EP01",
+      "published": "2026-07-04",
+      "description": "Fluffy tail sways, cyan glow on fur tips, heart-shaped tip curl — from shiro-ref-v1."
+    },
+    {
       "id": "raydar-anim-v1",
       "title": "Raydar — sensor pulse",
       "type": "video",
