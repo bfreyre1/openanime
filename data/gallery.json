@@ -1,6 +1,17 @@
 {
-  "updated": "2026-07-04",
+  "updated": "2026-07-05",
   "items": [
+    {
+      "id": "EP01-S01-nova-stunt-v2",
+      "title": "Nova — Midnight Glitch Run",
+      "type": "video",
+      "src": "/media/EP01-S01-nova-stunt-v2.mp4",
+      "poster": "/media/EP01-S01-nova-stunt-still-v3.jpg",
+      "character": "nova",
+      "episode": "EP01",
+      "published": "2026-07-05",
+      "description": "Rooftop Surron-style e-dirt-bike wheelie stunt drop — ghost duplicate, First Tear reality crack, neon decoy trails. EP01 edit desk S01."
+    },
     {
       "id": "EP01-S02-kai-nova-tension",
       "title": "Kai + Nova — doorway tension",
@@ -86,17 +97,6 @@
       "episode": "EP01",
       "published": "2026-07-04",
       "description": "Shadow protector, crimson eyes, rain-slick trench — hero ref."
-    },
-    {
-      "id": "nova-anim-v1",
-      "title": "Nova — Midnight Glitch Run",
-      "type": "video",
-      "src": "/media/nova-anim-v1.mp4",
-      "poster": "/media/nova-anim-v1-poster.jpg",
-      "character": "nova",
-      "episode": "EP01",
-      "published": "2026-07-04",
-      "description": "Slow push-in, rain, neon flicker — Midnight Glitch Run preview."
     },
     {
       "id": "nova-ref-v1",
