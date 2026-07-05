@@ -13,6 +13,17 @@
       "description": "Rooftop Surron-style e-dirt-bike wheelie stunt drop — ghost duplicate, First Tear reality crack, neon decoy trails. EP01 edit desk S01."
     },
     {
+      "id": "nova-anim-v1",
+      "title": "Nova — rooftop ref anim",
+      "type": "video",
+      "src": "/media/nova-anim-v1.mp4",
+      "poster": "/media/nova-anim-v1-poster.jpg",
+      "character": "nova",
+      "episode": "EP01",
+      "published": "2026-07-04",
+      "description": "Slow push-in, rain, neon flicker — hero ref motion study."
+    },
+    {
       "id": "EP01-S02-kai-nova-tension",
       "title": "Kai + Nova — doorway tension",
       "type": "video",
