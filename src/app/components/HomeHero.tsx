@@ -34,7 +34,15 @@ export function HomeHero({ children }: HomeHeroProps) {
           />
         )}
 
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0b10]/75 via-[#0a0b10]/45 to-[var(--bg)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0b10]/92 via-[#0a0b10]/55 to-[var(--bg)]" />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 90% 70% at 50% 18%, rgba(10, 11, 16, 0.65) 0%, transparent 72%)",
+          }}
+          aria-hidden
+        />
         <div className="hero-scanlines absolute inset-0 pointer-events-none" aria-hidden />
 
         <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-20 text-center md:py-28">
