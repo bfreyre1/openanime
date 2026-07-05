@@ -1,30 +1,33 @@
 import Link from "next/link";
 import { CharacterCard } from "./components/CharacterCard";
+import { HomeHero } from "./components/HomeHero";
 import { CAST, SITE } from "./lib/site";
 
 export default function HomePage() {
   return (
     <div>
-      <section className="py-12 text-center md:py-20">
-        <p className="text-xs uppercase tracking-[0.3em] text-[var(--cyan)] mb-4">
+      <HomeHero>
+        <p className="mb-4 text-xs uppercase tracking-[0.3em] text-[var(--cyan)]">
           Neo-Tokyo Bay
         </p>
-        <h1 className="text-4xl font-bold md:text-6xl bg-gradient-to-r from-[var(--pink)] via-[var(--purple)] to-[var(--cyan)] bg-clip-text text-transparent">
+        <h1 className="bg-gradient-to-r from-[var(--pink)] via-[var(--purple)] to-[var(--cyan)] bg-clip-text text-4xl font-bold text-transparent drop-shadow-[0_2px_24px_rgba(0,0,0,0.85)] md:text-6xl">
           {SITE.show}
         </h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg prose-muted">{SITE.tagline}</p>
+        <p className="mx-auto mt-6 max-w-xl text-lg text-[var(--text)]/90 drop-shadow-md">
+          {SITE.tagline}
+        </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Link href="/gallery" className="btn-primary">
             View Gallery
           </Link>
           <Link
             href="/episodes"
-            className="rounded-md border border-[var(--border)] px-6 py-3 text-sm font-medium hover:border-[var(--cyan)] transition-colors"
+            className="rounded-md border border-white/20 bg-black/30 px-6 py-3 text-sm font-medium backdrop-blur-sm transition-colors hover:border-[var(--cyan)]"
           >
             Season 1
           </Link>
         </div>
-      </section>
+      </HomeHero>
 
       <section className="py-12 border-t border-[var(--border)]">
         <h2 className="text-sm uppercase tracking-[0.2em] text-[var(--muted)] mb-8 text-center">
