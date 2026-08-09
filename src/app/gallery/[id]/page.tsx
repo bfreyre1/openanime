@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { galleryCharacterTags, getGalleryItem, getGalleryItems } from "../../lib/gallery";
+import { GalleryVideo } from "../../components/GalleryVideo";
+import {
+  galleryCharacterTags,
+  galleryVideoPlaybackSrc,
+  getGalleryItem,
+  getGalleryItems,
+} from "../../lib/gallery";
 
 export async function generateStaticParams() {
   return getGalleryItems().map((item) => ({ id: item.id }));
@@ -40,16 +47,22 @@ export default async function GalleryItemPage({
       )}
       <div className="rounded-lg overflow-hidden border border-[var(--border)] bg-black">
         {item.type === "video" ? (
-          <video
-            src={item.src}
-            controls
-            playsInline
-            className="w-full"
+          <GalleryVideo
+            src={galleryVideoPlaybackSrc(item)}
             poster={item.poster}
+            title={item.title}
           />
         ) : (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={item.src} alt={item.title} className="w-full" />
+          <Image
+            src={item.src}
+            alt={item.title}
+            width={1920}
+            height={1080}
+            sizes="(max-width: 768px) 100vw, 768px"
+            quality={80}
+            className="h-auto w-full"
+            priority
+          />
         )}
       </div>
       <p className="mt-4 text-xs text-[var(--muted)] uppercase tracking-wider">

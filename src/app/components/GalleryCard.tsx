@@ -1,37 +1,36 @@
 import Link from "next/link";
 import { galleryCharacterTags, type GalleryItem } from "../lib/gallery";
+import { GalleryThumb } from "./GalleryThumb";
 
-export function GalleryCard({ item }: { item: GalleryItem }) {
+function cardPreviewSrc(item: GalleryItem): string | undefined {
+  if (item.type === "video") return item.poster;
+  return item.src;
+}
+
+export function GalleryCard({
+  item,
+  priority = false,
+}: {
+  item: GalleryItem;
+  priority?: boolean;
+}) {
   const isVideo = item.type === "video";
+  const previewSrc = cardPreviewSrc(item);
 
   return (
     <article className="group overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--card)]">
       <Link href={`/gallery/${item.id}`} className="block">
         <div className="relative aspect-video bg-black overflow-hidden">
-          {isVideo ? (
-            item.poster ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={item.poster}
-                alt={item.title}
-                className="h-full w-full object-cover transition-transform group-hover:scale-105"
-              />
-            ) : (
-              <video
-                src={item.src}
-                muted
-                playsInline
-                preload="metadata"
-                className="h-full w-full object-cover"
-              />
-            )
-          ) : (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={item.src}
+          {previewSrc ? (
+            <GalleryThumb
+              src={previewSrc}
               alt={item.title}
-              className="h-full w-full object-cover transition-transform group-hover:scale-105"
+              priority={priority}
             />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[var(--purple)]/30 to-[var(--cyan)]/10 text-xs text-[var(--muted)]">
+              {isVideo ? "Video — open to play" : "No preview"}
+            </div>
           )}
           {isVideo && (
             <span className="absolute bottom-2 right-2 rounded bg-black/70 px-2 py-0.5 text-xs text-[var(--cyan)]">

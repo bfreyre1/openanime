@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { getCharacterMediaCount, getCharacterProfileSrc } from "../lib/gallery";
 import type { CharacterId } from "../lib/site";
@@ -19,11 +20,13 @@ export function CharacterCard({ character }: { character: Character }) {
     >
       <div className="relative aspect-[3/4] bg-gradient-to-br from-[var(--purple)]/20 to-[var(--cyan)]/10 overflow-hidden">
         {preview ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <Image
             src={preview}
             alt={character.name}
-            className="h-full w-full object-cover transition-transform group-hover:scale-105"
+            fill
+            sizes="(max-width: 768px) 50vw, 25vw"
+            quality={75}
+            className="object-cover transition-transform group-hover:scale-105"
           />
         ) : (
           <div className="flex h-full items-center justify-center">

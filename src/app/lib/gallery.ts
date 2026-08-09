@@ -8,6 +8,8 @@ export type GalleryItem = {
   src: string;
   /** Scene thumbnail — still or last frame; not hero ref. */
   poster?: string;
+  /** Mobile-friendly H.264 (faststart); falls back to src when absent. */
+  srcWeb?: string;
   /** Primary character label (legacy / display). */
   character?: string;
   /** Filter tags — multi-character scenes appear under each. */
@@ -46,6 +48,11 @@ export function getGalleryItemsByCharacter(character?: string): GalleryItem[] {
 
 export function getGalleryItem(id: string): GalleryItem | undefined {
   return getGalleryItems().find((item) => item.id === id);
+}
+
+/** Prefer web encode for playback (smaller / faststart). */
+export function galleryVideoPlaybackSrc(item: GalleryItem): string {
+  return item.srcWeb ?? item.src;
 }
 
 /** Locked hero ref for homepage character cards (not latest scene poster). */

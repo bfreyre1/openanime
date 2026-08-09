@@ -10,7 +10,7 @@ const links = [
 
 export function Header() {
   return (
-    <header className="border-b border-[var(--border)] bg-[var(--bg)]/90 backdrop-blur-md sticky top-0 z-50">
+    <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg)] md:bg-[var(--bg)]/90 md:backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <Link href="/" className="group">
           <span className="text-xs uppercase tracking-[0.25em] text-[var(--cyan)]">

@@ -53,8 +53,12 @@ export default async function GalleryPage({ searchParams }: Props) {
         </p>
       ) : (
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((item) => (
-            <GalleryCard key={item.id} item={item} />
+          {items.map((item, index) => (
+            <GalleryCard
+              key={item.id}
+              item={item}
+              priority={index < 2}
+            />
           ))}
         </div>
       )}

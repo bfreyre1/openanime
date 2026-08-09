@@ -13,13 +13,14 @@ export function HomeHero({ children }: HomeHeroProps) {
 
   return (
     <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-12 w-screen overflow-hidden md:mb-16">
-      <div className="relative flex min-h-[min(88vh,920px)] items-center justify-center">
+      <div className="relative flex min-h-[min(72vh,720px)] items-center justify-center md:min-h-[min(88vh,920px)]">
         {imageOk ? (
           <Image
             src="/images/hero-neo-tokyo-bay.jpg"
             alt="Neo-Tokyo Bay skyline and Glitch House at night in the rain"
             fill
             priority
+            quality={70}
             sizes="100vw"
             className="object-cover object-[30%_78%] md:object-[24%_72%]"
             onError={() => setImageOk(false)}

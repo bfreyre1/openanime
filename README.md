@@ -29,6 +29,14 @@ bash ~/.openclaw/canon/scripts/publish-to-openanime.sh \
   --id nova-anim-v1 --title "Nova — rooftop anim" --character nova --episode EP01
 ```
 
+Videos: publish script also writes `{id}-web.mp4` (720p-ish H.264 + faststart) and sets `srcWeb` in `gallery.json` for faster mobile playback. To rebuild web copies for everything already published:
+
+```bash
+OPENANIME_REPO=~/Projects/openanime bash ~/Projects/openclaw-canon/scripts/backfill-openanime-web-videos.sh
+```
+
+Site playback uses `srcWeb` when present (tap-to-play on clip pages).
+
 ## Vercel
 
 1. Import GitHub repo `openanime`
