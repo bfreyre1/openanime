@@ -15,27 +15,33 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Publish media (from RunPod or PC)
+## Publish media (canon pipeline — use this)
 
-1. Copy approved file to `public/media/` (e.g. `nova-anim-v1.mp4`)
-2. Add entry to `data/gallery.json`
-3. `git add` → commit → push → Vercel deploys
+**Do not** hand-drop MP4-only entries. Use the canon script so every video gets **poster + `{id}-web.mp4` + `srcWeb`**.
 
-Or use canon script (after paths configured):
+Standards checklist: `openclaw-canon/modules/glitch-crew/OPENANIME-PUBLISH-STANDARDS.md`
 
 ```bash
-bash ~/.openclaw/canon/scripts/publish-to-openanime.sh \
-  ~/.openclaw/workspace/creative-runtime/gallery/glitch/videos/nova-anim-v1.mp4 \
-  --id nova-anim-v1 --title "Nova — rooftop anim" --character nova --episode EP01
+bash ~/Projects/openclaw-canon/scripts/publish-to-openanime.sh \
+  /path/to/approved.mp4 \
+  --id nova-anim-v1 --title "Nova — rooftop anim" --character nova --episode EP01 \
+  --poster /path/to/scene-still.jpg
 ```
 
-Videos: publish script also writes `{id}-web.mp4` (720p-ish H.264 + faststart) and sets `srcWeb` in `gallery.json` for faster mobile playback. To rebuild web copies for everything already published:
+Push **from PC** after publish (RunPod: encode there, SCP, then push):
+
+```powershell
+cd C:\Users\Fleet9\Projects\openanime
+git add data\gallery.json public\media\<id>.*
+git commit -m "Publish <id>"
+git push origin main
+```
+
+Backfill all web encodes (one-time / policy change):
 
 ```bash
-OPENANIME_REPO=~/Projects/openanime bash ~/Projects/openclaw-canon/scripts/backfill-openanime-web-videos.sh
+OPENANIME_REPO=/root/openanime bash /workspace/openclaw/canon/scripts/backfill-openanime-web-videos.sh
 ```
-
-Site playback uses `srcWeb` when present (tap-to-play on clip pages).
 
 ## Vercel
 
