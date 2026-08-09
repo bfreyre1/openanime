@@ -22,7 +22,8 @@
       "character": "nova",
       "episode": "EP01",
       "published": "2026-07-04",
-      "description": "Slow push-in, rain, neon flicker \u2014 hero ref motion study."
+      "description": "Slow push-in, rain, neon flicker \u2014 hero ref motion study.",
+      "srcWeb": "/media/nova-anim-v1-web.mp4"
     },
     {
       "id": "EP01-S02-kai-nova-tension",
@@ -37,7 +38,8 @@
       ],
       "episode": "EP01",
       "published": "2026-07-04",
-      "description": "Interior two-shot \u2014 charged proximity, dry subjects, rain on window only. EP01 edit desk S02."
+      "description": "Interior two-shot \u2014 charged proximity, dry subjects, rain on window only. EP01 edit desk S02.",
+      "srcWeb": "/media/EP01-S02-kai-nova-tension-web.mp4"
     },
     {
       "id": "shiro-tail-playful-v1",
@@ -48,7 +50,8 @@
       "character": "shiro",
       "episode": "EP01",
       "published": "2026-07-04",
-      "description": "Fluffy tail sways, cyan glow on fur tips, heart-shaped tip curl \u2014 from shiro-ref-v1."
+      "description": "Fluffy tail sways, cyan glow on fur tips, heart-shaped tip curl \u2014 from shiro-ref-v1.",
+      "srcWeb": "/media/shiro-tail-playful-v1-web.mp4"
     },
     {
       "id": "raydar-anim-v1",
@@ -59,7 +62,8 @@
       "character": "raydar",
       "episode": "EP01",
       "published": "2026-07-04",
-      "description": "Chest core pulses, eyes shift blue to pink, scan sweep."
+      "description": "Chest core pulses, eyes shift blue to pink, scan sweep.",
+      "srcWeb": "/media/raydar-anim-v1-web.mp4"
     },
     {
       "id": "shiro-anim-v1",
@@ -70,7 +74,8 @@
       "character": "shiro",
       "episode": "EP01",
       "published": "2026-07-04",
-      "description": "Tail sway, fox ears twitch, after-image phantom flicker."
+      "description": "Tail sway, fox ears twitch, after-image phantom flicker.",
+      "srcWeb": "/media/shiro-anim-v1-web.mp4"
     },
     {
       "id": "kai-anim-v1",
@@ -81,7 +86,8 @@
       "character": "kai",
       "episode": "EP01",
       "published": "2026-07-04",
-      "description": "Slow push-in, rain, crimson eyes, shadow flicker."
+      "description": "Slow push-in, rain, crimson eyes, shadow flicker.",
+      "srcWeb": "/media/kai-anim-v1-web.mp4"
     },
     {
       "id": "raydar-ref-v1",
