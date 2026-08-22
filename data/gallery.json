@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05",
+  "updated": "2026-08-22",
   "items": [
     {
       "id": "EP01-S01-nova-stunt-v2",
@@ -128,6 +128,18 @@
       "episode": "EP01",
       "published": "2026-07-04",
       "description": "Pink-blue hair, glitch tattoo, rooftop rain \u2014 hero ref."
+    },
+    {
+      "id": "ep01-lounge-nova-couch-v1",
+      "title": "Nova \u2014 lounge hang",
+      "type": "video",
+      "src": "/media/ep01-lounge-nova-couch-v1.mp4",
+      "character": "nova",
+      "episode": "EP01",
+      "published": "2026-08-22",
+      "description": "EP01 warehouse lounge. Nova on the couch. 8s from locked still.",
+      "poster": "/media/ep01-lounge-nova-couch-v1-poster.jpg",
+      "srcWeb": "/media/ep01-lounge-nova-couch-v1-web.mp4"
     }
   ]
 }
