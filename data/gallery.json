@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22",
+  "updated": "2026-08-27",
   "items": [
     {
       "id": "EP01-S01-nova-stunt-v2",
@@ -140,6 +140,18 @@
       "description": "EP01 warehouse lounge. Nova on the couch. 8s from locked still.",
       "poster": "/media/ep01-lounge-nova-couch-v1-poster.jpg",
       "srcWeb": "/media/ep01-lounge-nova-couch-v1-web.mp4"
+    },
+    {
+      "id": "ep01-nova-front-pull-v1",
+      "title": "Nova \u2014 front pull",
+      "type": "video",
+      "src": "/media/ep01-nova-front-pull-v1.mp4",
+      "character": "nova",
+      "episode": "EP01",
+      "published": "2026-08-27",
+      "description": "Imagine zoom. Long view coming at you down the wet highway. Copy opens on that pull, ending as made.",
+      "poster": "/media/ep01-nova-front-pull-v1-poster.jpg",
+      "srcWeb": "/media/ep01-nova-front-pull-v1-web.mp4"
     }
   ]
 }
